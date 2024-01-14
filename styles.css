@@ -14,19 +14,18 @@
       }
 
 
-      .panel .img-text {
-        background-color: rgba(0, 0, 0, 0.7);
+      .img-text {
         color: white;
         font-size: 1.2rem;
         padding: 10px;
       }
-
-      .panel:active ,.img-text:active {
-        opacity: 1;
-		  width:200px;
+.img-text:active {
+        position:absolute;
+	top:20px;
+		 z-index: 1; 
       }
 
       .panel:active {
-       
-        z-index: 1;
+       width:200px;
+        
       }
