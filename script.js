@@ -16,8 +16,9 @@ let data=[
 			}
 		];
 		let container=document.querySelector(".container");
-		data.forEach(item=>{
-			let num=1;
+let num=1;		
+data.forEach(item=>{
+			
 			let div=document.createElement("img");
 			div.src=item.Link;
 			div.classList.add("panel");

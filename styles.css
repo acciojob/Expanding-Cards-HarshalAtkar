@@ -1,6 +1,7 @@
 /*  your css code here. If applicable */
 .img-text{
 	color:white;
+	position:above;
 }
 .container{
 	display:flex;
@@ -17,7 +18,7 @@
 	height:100%;
 	width:300px;
 }
-/* #panel-1{
+#panel-1{
 	height:100%;
 	width:50%;	
-} */
+}
