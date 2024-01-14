@@ -17,12 +17,15 @@ let data=[
 		];
 		let container=document.querySelector(".container");
 		data.forEach(item=>{
+			let num=1;
 			let div=document.createElement("img");
 			div.src=item.Link;
 			div.classList.add("panel");
+			div.id=`panel-${num}`
 			let text=document.createElement("p");
 			text.classList.add("img-text")
 			text.innerText=item.Text;
 			div.appendChild(text);
 			container.appendChild(div);
+			num=num+1;
 		});
