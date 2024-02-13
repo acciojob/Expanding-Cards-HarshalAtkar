@@ -35,14 +35,8 @@ data.forEach(item=>{
 			num=num+1;
 		});
 
- panel1.classList.add('active');
- // const panels = document.querySelectorAll('.panel');
+ // panel1.classList.add('active');
+ const panels = document.querySelectorAll('.panel');
+ const imgtext = document.querySelectorAll('.img-text');
 
- //        panels.forEach(panel => {
- //            panel.addEventListener('click', () => {
- //                // Remove 'active' class from all panels
- //                panels.forEach(p => p.classList.remove('active'));
- //                // Add 'active' class to the clicked panel
- //                panel.classList.add('active');
- //            });
- //        });
+
