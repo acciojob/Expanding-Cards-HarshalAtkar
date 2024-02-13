@@ -19,11 +19,12 @@ let data=[
 let num=1;		
 data.forEach(item=>{
 			
-			let div=document.createElement("img");
-			div.src=item.Link;
+			let div=document.createElement("div");
+			div.style.backgroundImage = `url(${item.Link})`;
 			div.classList.add("panel");
 			div.id=`panel-${num}`
-			let text=document.createElement("p");
+			
+	let text=document.createElement("p");
 			text.classList.add("img-text")
 			text.innerText=item.Text;
 			div.appendChild(text);
