@@ -16,6 +16,8 @@ let data=[
 			}
 		];
 		let container=document.querySelector(".container");
+		let panel1=document.querySelector("#panel-1");
+  
 let num=1;		
 data.forEach(item=>{
 			
@@ -27,7 +29,20 @@ data.forEach(item=>{
 	let text=document.createElement("p");
 			text.classList.add("img-text")
 			text.innerText=item.Text;
-			div.appendChild(text);
+			
+	div.appendChild(text);
 			container.appendChild(div);
 			num=num+1;
 		});
+
+ panel1.classList.add('active');
+ // const panels = document.querySelectorAll('.panel');
+
+ //        panels.forEach(panel => {
+ //            panel.addEventListener('click', () => {
+ //                // Remove 'active' class from all panels
+ //                panels.forEach(p => p.classList.remove('active'));
+ //                // Add 'active' class to the clicked panel
+ //                panel.classList.add('active');
+ //            });
+ //        });
