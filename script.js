@@ -16,8 +16,7 @@ let data=[
 			}
 		];
 		let container=document.querySelector(".container");
-		let panel1=document.querySelector("#panel-1");
-  
+ 
 let num=1;		
 data.forEach(item=>{
 			
@@ -30,13 +29,35 @@ data.forEach(item=>{
 			text.classList.add("img-text")
 			text.innerText=item.Text;
 			
-	div.appendChild(text);
+	        div.appendChild(text);
 			container.appendChild(div);
 			num=num+1;
+	
 		});
 
- // panel1.classList.add('active');
- const panels = document.querySelectorAll('.panel');
- const imgtext = document.querySelectorAll('.img-text');
+const panels = document.querySelectorAll('.panel');
+ const panel = document.querySelector('.panel');
+ // const text = document.querySelectorAll('.img-text');
+ const text = document.querySelector('.img-text');
+ 
+
+panel.classList.add("active");
+text.classList.add("active");
+panels.forEach((panel) => {
+  panel.addEventListener('click', () => {
+    removeActiveClasses();
+    panel.classList.add('active');
+	  const text2 = document.querySelector('.img-text');
+    text2.classList.add('active');
+  });
+});
+
+function removeActiveClasses() {
+  panels.forEach((panel) => {
+    panel.classList.remove('active');
+	  const text2 = document.querySelector('.img-text');
+    text2.classList.remove('active');
+  });
+}
 
 
