@@ -37,7 +37,7 @@ data.forEach(item=>{
 
 const panels = document.querySelectorAll('.panel');
  const panel = document.querySelector('.panel');
- const text = document.querySelectorAll('.img-text');
+ // const text = document.querySelectorAll('.img-text');
  const text = document.querySelector('.img-text');
  
 
@@ -45,18 +45,21 @@ panel.classList.add("active");
 text.classList.add("active");
 panels.forEach((panel) => {
   panel.addEventListener('click', () => {
-    removeActiveClasses();
-    panel.classList.add('active');
-	  const text2 = document.querySelector('.img-text');
-    text2.classList.add('active');
+   removeActiveClasses();
+  panel.classList.add('active');
+  panel.querySelector('.img-text').classList.add('active');
+
   });
 });
+
+
+
+
 
 function removeActiveClasses() {
   panels.forEach((panel) => {
     panel.classList.remove('active');
-	  const text2 = document.querySelector('.img-text');
-    text2.classList.remove('active');
+	panel.querySelector('.img-text').classList.remove('active');
   });
 }
 
