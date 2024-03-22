@@ -37,7 +37,7 @@ data.forEach(item=>{
 
 const panels = document.querySelectorAll('.panel');
  const panel = document.querySelector('.panel');
- // const text = document.querySelectorAll('.img-text');
+ const text = document.querySelectorAll('.img-text');
  const text = document.querySelector('.img-text');
  
 
