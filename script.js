@@ -43,6 +43,7 @@ const panels = document.querySelectorAll('.panel');
 
 panel.classList.add("active");
 text.classList.add("active");
+
 panels.forEach((panel) => {
   panel.addEventListener('click', () => {
    removeActiveClasses();
